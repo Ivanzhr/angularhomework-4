@@ -1,0 +1,7 @@
+<div class="wrepper">
+    <div class="items">
+        <div class="item" *ngFor="let product of products" [ngStyle]="getCategoryStyle(product.category)">
+            {{ product.name }} - ${{ product.price }}
+        </div>
+    </div>
+</div>
